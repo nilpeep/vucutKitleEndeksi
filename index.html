@@ -2,15 +2,57 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vücut Kitle Indeksi Hesapla</title>
+    <title>Vücut Kitle Endeksi Hesapla</title>
 </head>
 <body>
     <div style="height: 100vh;" id="container" class=" d-flex align-items-center justify-content-center" >
-        <div id="content" class=" shadow-lg w-75 h-75 p-3 rounded">
-            hello world
+        <div id="content" class=" shadow-lg w-75 h-75 rounded">
+            
+            <div class="calculator rounded p-2 fs-1">
+                <div class="header">
+                    Vücut Kitle Endeksi Hesapla
+                </div>
+                <form action="/result" class="fs-3" method="post">
+
+                
+                <div class="height">
+                    <label for="height">Boy uzunluğunuz  (cm) :</label>
+                    <input name="height" class="float-right rounded w-25" type="number">
+                </div>
+                <div class="weight">
+                    <label for="weight">Vücut ağırlığınız (kg) :</label>
+                    <input type="number" class="float-right rounded w-25" name="weight">
+                </div>
+                <div class="age">
+                    <label for="age">Yaşınız (yıl) :</label>
+                    <input class="float-right" type="number" name="age">
+                </div>
+                <div class="gender">
+                    <label for="gender">Cinsiyetiniz</label>
+                    <select class="float-right" name="gender" id="gender">
+                        <option value="" disabled selected>Seçiniz...</option>
+                        <option value="male">Erkek</option>
+                        <option value="female">Kadın</option>
+                    </select>
+                </div>
+                <div class="waist">
+                    <label for="waist">Bel Çevreniz</label>
+                    <input placeholder="*Bilmiyorsaniz bos birakin" class="float-right" type="number">
+                </div>
+            </form>
+                </div>
+                </div>
+                </div>
+            </div>
+
         </div>
     </div>
     
