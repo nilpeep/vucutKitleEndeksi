@@ -1,0 +1,8 @@
+#container{
+    background: rgb(160,222,220);
+background: linear-gradient(90deg, rgba(160,222,220,1) 0%, rgb(255, 243, 162) 50%, rgba(161,239,236,1) 100%);
+}
+
+#content{
+     background: #fff;
+}
