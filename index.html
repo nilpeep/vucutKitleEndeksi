@@ -16,37 +16,46 @@
     <div style="height: 100vh;" id="container" class=" d-flex align-items-center justify-content-center" >
         <div id="content" class=" shadow-lg w-75 h-75 rounded">
             
-            <div class="calculator rounded p-2 fs-1">
-                <div class="header">
+            <div style="border: 3px outset black;" class="calculator rounded p-2 fs-1">
+                <div style="text-align: center;" class="header ">
                     Vücut Kitle Endeksi Hesapla
                 </div>
-                <form action="/result" class="fs-3" method="post">
+                <form  action="/result" class="fs-3" method="post">
 
                 
-                <div class="height">
-                    <label for="height">Boy uzunluğunuz  (cm) :</label>
-                    <input name="height" class="float-right rounded w-25" type="number">
-                </div>
-                <div class="weight">
-                    <label for="weight">Vücut ağırlığınız (kg) :</label>
-                    <input type="number" class="float-right rounded w-25" name="weight">
-                </div>
-                <div class="age">
-                    <label for="age">Yaşınız (yıl) :</label>
-                    <input class="float-right" type="number" name="age">
-                </div>
-                <div class="gender">
-                    <label for="gender">Cinsiyetiniz</label>
-                    <select class="float-right" name="gender" id="gender">
-                        <option value="" disabled selected>Seçiniz...</option>
-                        <option value="male">Erkek</option>
-                        <option value="female">Kadın</option>
-                    </select>
-                </div>
-                <div class="waist">
-                    <label for="waist">Bel Çevreniz</label>
-                    <input placeholder="*Bilmiyorsaniz bos birakin" class="float-right" type="number">
-                </div>
+                    <div class="height">
+                        <label for="height">Boy uzunluğunuz (cm):</label>
+                        <input name="height" class="float-right rounded w-25" type="number">
+                        <hr class="form-divider">
+                    </div>
+                    <div class="weight">
+                        <label for="weight">Vücut ağırlığınız (kg):</label>
+                        <input type="number" class="float-right rounded w-25" name="weight">
+                        <hr class="form-divider">
+                    </div>
+                    <div class="age">
+                        <label for="age">Yaşınız (yıl):</label>
+                        <input class="float-right rounded w-25" type="number" name="age">
+                        <hr class="form-divider">
+                    </div>
+                    <div class="gender">
+                        <label for="gender">Cinsiyetiniz:</label>
+                        <select class="float-right rounded w-25" name="gender" id="gender">
+                            <option value="" disabled selected>Seçiniz...</option>
+                            <option value="male">Erkek</option>
+                            <option value="female">Kadın</option>
+                        </select>
+                        <hr class="form-divider">
+                    </div>
+                    <div class="waist">
+                        <label for="waist">Bel Çevreniz:</label>
+                        <input style="font-size:smaller;" placeholder="*Bilmiyorsanız boş bırakın" class="float-right rounded w-25" type="number">
+                        <hr class="form-divider">
+                    </div>
+                    <div class="mt-3" style="text-align: center;">
+                    <button type="button" class="btn btn-success rounded w-25 ">Onayla</button>
+                    <button type="button" class="btn btn-danger rounded w-25">Temizle</button>
+                    </div>
             </form>
                 </div>
                 </div>
@@ -55,6 +64,6 @@
 
         </div>
     </div>
-    
+    <script src="app.js"></script>
 </body>
 </html>
