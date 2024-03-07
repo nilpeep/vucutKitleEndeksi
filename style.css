@@ -16,16 +16,16 @@ body{
     background: radial-gradient(circle, rgba(66,92,224,1) 0%, rgba(84,215,203,1) 100%);}
 
 #content{
-     background: #fff;
+    background: rgb(246,246,246);
+    background: radial-gradient(circle, rgba(246,246,246,1) 100%, rgba(149,136,45,1) 100%);
+        
     
  
 
 }
 
 .calculator{
-    background: rgb(246,246,246);
-background: radial-gradient(circle, rgba(246,246,246,1) 100%, rgba(149,136,45,1) 100%);
-    font-size: 1.5em;
+font-size: 1.5em;
     height: 100%;
     width: 60%;
    
