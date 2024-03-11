@@ -69,7 +69,7 @@ form{
 
 
 /* mobil için küçültme */
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     body {
         font-size: 14px; 
     }
@@ -77,4 +77,4 @@ form{
     .calculator {
         width: 100%; 
     }
-} */
+} 
