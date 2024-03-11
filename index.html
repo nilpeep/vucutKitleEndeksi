@@ -13,14 +13,20 @@
     <title>Vücut Kitle Endeksi Hesaplama</title>
 </head>
 <body>
-    <div style="text-align: center;" class="header bg-white w-100 fs-5">
-        Vücut Kitle Endeksi Hesapla
-    </div>
+
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid d-flex align-items-center justify-content-center">
+          <span class="navbar-brand mb-0 h1">Vücut Kitle Endeksi Hesapla</span>
+        </div>
+      </nav>
+    
+    <div class="container">
+
     <div style="height: 100vh;" id="container" class=" d-flex align-items-center justify-content-center" >
-        <div id="content" class=" shadow-lg w-75 h-75 rounded p-3">
+        <div id="content" class=" shadow-lg rounded p-3 container-fluid">
             
-            <div  class="calculator rounded p-2 ">
-                <form  action="/result" class="" method="post">
+            <div  class="calculator rounded p-2 d-flex flex-row justify-content-between">
+                <form  action="/result" class="w-50" method="post">
 
                 
                     <div class="height form-group">
@@ -59,13 +65,18 @@
                     <button type="button" class="btn btn-danger rounded w-25">Temizle</button>
                     </div>
             </form>
-                </div>
-                </div>
-                </div>
+            <div class="rounded bg-body-tertiary shadow-sm m-4 w-50">
+                sonuclar burada gozukecek
             </div>
-
         </div>
+        
     </div>
+</div>
+</div>
+
+</div>
+    </div>
+</div>
     <script src="app.js"></script>
 </body>
 </html>

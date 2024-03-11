@@ -7,17 +7,12 @@
 body{
     font-family: "Lato", sans-serif;
     /* font-size: calc(1rem + .3vw)!important; */
-
-}
-
-.header{
-  position: fixed;
-}
-
-
-#container{
     background: rgb(66,92,224);
-    background: radial-gradient(circle, rgba(66,92,224,1) 0%, rgba(84,215,203,1) 100%);}
+    background: radial-gradient(circle, rgba(66,92,224,1) 0%, rgba(84,215,203,1) 100%);
+
+}
+
+
 
 #content{
     background: rgb(246,246,246);
@@ -28,12 +23,7 @@ body{
 
 }
 
-.calculator{
-/* font-size: 1.5em; */
-    height: 100%;
-    width: 60%;
-   
-}
+
 
 form{
     display: flex;
