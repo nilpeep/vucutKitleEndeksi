@@ -13,47 +13,49 @@
     <title>Vücut Kitle Endeksi Hesaplama</title>
 </head>
 <body>
+    <div style="text-align: center;" class="header bg-white w-100 fs-5">
+        Vücut Kitle Endeksi Hesapla
+    </div>
     <div style="height: 100vh;" id="container" class=" d-flex align-items-center justify-content-center" >
         <div id="content" class=" shadow-lg w-75 h-75 rounded p-3">
             
-            <div  class="calculator rounded p-2 fs-1">
-                <div style="text-align: center;" class="header ">
-                    Vücut Kitle Endeksi Hesapla
-                </div>
-                <form  action="/result" class="fs-3" method="post">
+            <div  class="calculator rounded p-2 ">
+                <form  action="/result" class="" method="post">
 
                 
-                    <div class="height">
+                    <div class="height form-group">
                         <label for="height">Boy uzunluğunuz (cm):</label>
-                        <input name="height" class="float-right rounded w-25" type="number">
+                        <input name="height" class="form-control" type="number">
                         <hr class="form-divider">
                     </div>
-                    <div class="weight">
+                    <div class="weight form-group">
                         <label for="weight">Vücut ağırlığınız (kg):</label>
-                        <input type="number" class="float-right rounded w-25" name="weight">
+                        <input type="number" class="form-control" name="weight">
                         <hr class="form-divider">
                     </div>
-                    <div class="age">
+                    <div class="age form-group">
                         <label for="age">Yaşınız (yıl):</label>
-                        <input class="float-right rounded w-25" type="number" name="age">
+                        <input class="form-control " type="number" name="age">
                         <hr class="form-divider">
                     </div>
-                    <div class="gender">
+                    <div class="gender form-group">
                         <label for="gender">Cinsiyetiniz:</label>
-                        <select class="float-right rounded w-25" name="gender" id="gender">
+                        <select class="form-control" name="gender" id="gender">
                             <option value="" disabled selected>Seçiniz...</option>
                             <option value="male">Erkek</option>
                             <option value="female">Kadın</option>
                         </select>
                         <hr class="form-divider">
                     </div>
-                    <div class="waist">
+                    <div class="waist form-group">
                         <label for="waist">Bel Çevreniz:</label>
-                        <input style="font-size:smaller;" placeholder="*Bilmiyorsanız boş bırakın" class="float-right rounded w-25" type="number">
+                        <input   class=" form-control" type="number">
+                        <small id="emailHelp" class="form-text text-muted"><em>*Bilmiyorsaniz bos birakin</em></small>
+                    
                         <hr class="form-divider">
                     </div>
                     <div class="mt-3" style="text-align: center;">
-                    <button type="button" class="btn btn-success rounded w-25 ">Onayla</button>
+                    <button type="button" class="btn btn-success rounded w-25" onclick="clearForm()">Onayla</button>
                     <button type="button" class="btn btn-danger rounded w-25">Temizle</button>
                     </div>
             </form>

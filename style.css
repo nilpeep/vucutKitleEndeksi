@@ -6,8 +6,12 @@
 }
 body{
     font-family: "Lato", sans-serif;
-    font-size: calc(1rem + .3vw)!important;
+    /* font-size: calc(1rem + .3vw)!important; */
 
+}
+
+.header{
+  position: fixed;
 }
 
 
@@ -25,7 +29,7 @@ body{
 }
 
 .calculator{
-font-size: 1.5em;
+/* font-size: 1.5em; */
     height: 100%;
     width: 60%;
    
